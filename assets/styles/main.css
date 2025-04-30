@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+/* ===================== FADE IN ===================== */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ===================== SECTION FADE ===================== */
+@keyframes section-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-section-fade {
+  animation: section-fade 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ===================== LOGO SLIDE ===================== */
+@keyframes logo-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-logo-slide {
+  animation: logo-slide 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+}
+
+/* ===================== TAGLINE SLIDE ===================== */
+@keyframes tagline-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.animate-tagline-slide {
+  animation: tagline-slide 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+}
+
+/* ===================== DESCRIPTION SLIDE ===================== */
+@keyframes description-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-description-slide {
+  animation: description-slide 1s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+}
+
+/* ===================== DOWN ARROW BOUNCE ===================== */
+@keyframes arrow-bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-arrow-bounce {
+  animation: arrow-bounce 1.8s ease-in-out infinite;
+}
+
+/* ===================== NAV SLIDE ===================== */
+@keyframes nav-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-nav-slide {
+  animation: nav-slide 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
